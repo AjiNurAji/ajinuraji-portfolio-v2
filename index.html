@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap CSS 
+      https://getbootstrap.com/docs/5.3/getting-started/introduction/
+    -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Font Google Import 
+      https://fonts.google.com/
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand fw-bold text-uppercase" href="#"
+            >aji nur aji</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" abindex="0">
+      <!-- Hero Section -->
+      <section id="home" class="py-5 position-relative">
+        <div
+          class="container d-flex flex-xl-row flex-column justify-content-center align-items-center h-full"
+        >
+          <div class="hero-left pe-7">
+            <p><span class="text-primary">Hello,</span> i'am Aji</p>
+            <h1 class="text-uppercase fw-bold fs-1" id="typed">
+              <span
+                class="typer"
+                id="main"
+                data-words="web development"
+                data-delay="100"
+                data-deleteDelay="1000"
+                data-loop="false"
+              ></span>
+              <span class="cursor" data-owner="main"></span>
+            </h1>
+            <p class="text-body-secondary">
+              a new graduate majoring in software engineering who can create
+              websites with Nextjs, Laravel, and Reactjs.
+            </p>
+            <div class="d-flex gap-3">
+              <!-- href="./assets/cv/CV_AjiNurAji.pdf"
+                download="CV Aji Nur Aji" -->
+              <a
+                href="mailto:ajinuraji090306@gmail.com"
+                class="btn bg-primary text-white"
+                >Hire me</a
+              >
+              <a href="" class="btn btn-border">See my work</a>
+            </div>
+          </div>
+          <div
+            class="hero-right d-flex justify-content-center align-items-center"
+          >
+            <div class="image-hero">
+              <img src="./assets/images/img-code.png" class="animation-icon" />
+              <img src="./assets/images/img-roket.png" class="animation-icon" />
+              <img src="./assets/images/img-wifi.png" class="animation-icon" />
+              <img src="./assets/images/hero-image.png" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+        <img src="./assets/images/wave.svg" class="position-absolute bottom-0 start-0" />
+      </section>
+  
+      <!-- About Section -->
+      <section id="about" class="py-5 text-white">
+        <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+          <div
+            class="image-about d-flex justify-content-center align-items-center"
+          >
+            <div class="image-wrapper">
+              <img
+                src="./assets/images/me.jpg"
+                alt="me ajinuraji"
+                class="img-fluid img-about"
+              />
+            </div>
+          </div>
+          <div class="text-about">
+            <h2 class="text-uppercase">about me</h2>
+            <p>
+              I am a recent graduate with a major in Software Engineering. I bring
+              a strong foundation in web development, including expertise in HTML,
+              CSS, and JavaScript. My academic projects, such as creating dynamic
+              and responsive websites, showcase my ability to apply theoretical
+              knowledge to practical solutions. I am enthusiastic about
+              contributing with my skills and learning from experienced
+              professionals in a dynamic work environment.
+            </p>
+            <a href="./assets/cv/CV_AjiNurAji.pdf" download="CV Aji Nur Aji" class="btn btn-about">Download CV</a>
+          </div>
+        </div>
+        <div class="box container bg-light text-center text-dark rounded p-4">
+          <h4 class="fw-bold text-uppercase mb-4 fs-6">spesializing in</h4>
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4">
+            <img class="language" src="./assets/images/html5.png" />
+            <img class="language" src="./assets/images/css3.png" />
+            <img class="language" src="./assets/images/js.svg" />
+            <img class="language" src="./assets/images/nextjs.png" />
+            <img class="language" src="./assets/images/reactjs.png" />
+            <img class="language" src="./assets/images/laravel.png" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="bg-light" style="height: 100vh;"></section>
+    </main>
+
+    <!-- Bootstrap JS 
+      https://getbootstrap.com/docs/5.3/getting-started/introduction/
+    -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- typer js 
+      https://steven.codes/typerjs/
+    -->
+    <script src="./assets/js/typer.js"></script>
+
+    <!-- my js -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
