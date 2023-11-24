@@ -11,6 +11,11 @@
     -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
+    <!-- Locomotive scroll css
+      https://github.com/locomotivemtl/locomotive-scroll/blob/master/dist/locomotive-scroll.css
+    -->
+    <link rel="stylesheet" href="./assets/css/locomotive-scroll.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -69,7 +74,7 @@
 
     <main
       data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
+      data-bs-target="#navbar"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
       abindex="0"
@@ -176,7 +181,155 @@
         </div>
       </section>
 
-      <section id="projects" class="bg-light" style="height: 100vh"></section>
+      <section id="projects" class="bg-light py-5 text-center px-md-0 px-4">
+        <div class="container">
+          <h1
+            class="text-uppercase fw-bold fs-2 pt-5 pb-3 mt-5 mb-3 position-relative title"
+          >
+            recent projects
+          </h1>
+          <p class="text-body-secondary w-md-50 px-md-0 px-4 mx-auto">
+            You can see all the projects i have worked on here. I'm interested
+            in freelance.
+            However, if you have other request or question, don't hesitate to
+            contact me.
+          </p>
+
+          <div class="row row-cols-1 mt-5 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card text-start">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/spp.png"
+                    class="card-img-top"
+                    alt="pay-spp"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">SPP Payment Application</h5>
+                  <p class="card-text">
+                    This tuition payment application was created using the
+                    Laravel framework version 10. This application was created
+                    to fulfill the requirements for the Skills Competency Test
+                    for the Software Engineering major.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    target="_blank"
+                    href="https://github.com/AjiNurAji/laravel-blade-spp-project"
+                    class="text-body-secondary text-decoration-none"
+                    ><i class="ph ph-github-logo pe-1"></i>Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-start">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/ajiacademy.png"
+                    class="card-img-top"
+                    alt="aji-academy"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Aji Academy</h5>
+                  <p class="card-text">
+                    I participated in a web design competition on November 13,
+                    2023, at the FKOM Festival and I created Aji Academy at this
+                    event. In implementing this project, I used Next.js to
+                    create website pages.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    target="_blank"
+                    href="https://demo-ajiacademy.netlify.app"
+                    class="text-body-secondary me-2 text-decoration-none"
+                    ><i class="ph ph-arrow-square-out pe-1"></i>Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/AjiNurAji/aji-academy"
+                    class="text-body-secondary text-decoration-none"
+                    ><i class="ph ph-github-logo pe-1"></i>Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-start">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/secretmessages.png"
+                    class="card-img-top"
+                    alt="secret-message"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Secret Message</h5>
+                  <p class="card-text">
+                    The "secretmessage" project is created with the purpose of
+                    sending secret messages to me. The website is built with
+                    Next.js as the frontend and Laravel as the backend. This
+                    project utilizes a MYSQL database.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    target="_blank"
+                    href="https://secrettmessage.netlify.app"
+                    class="text-body-secondary me-2 text-decoration-none"
+                    ><i class="ph ph-arrow-square-out pe-1"></i>Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/AjiNurAji/secret-message-nextjs"
+                    class="text-body-secondary text-decoration-none"
+                    ><i class="ph ph-github-logo pe-1"></i>Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-start">
+                <div class="card-image">
+                  <img
+                    src="/assets/images/v1.png"
+                    class="card-img-top"
+                    alt="Portofolio V1."
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio V1</h5>
+                  <p class="card-text">
+                    This is my web portfolio first version made with HTML, CSS,
+                    and JavaScript.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a
+                    target="_blank"
+                    href="https://v1-ajinuraji.vercel.app"
+                    class="text-body-secondary me-2 text-decoration-none"
+                    ><i class="ph ph-arrow-square-out pe-1"></i>Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/AjiNurAji9/MYPortofolio"
+                    class="text-body-secondary text-decoration-none"
+                    ><i class="ph ph-github-logo pe-1"></i>Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more py-4">
+            <a href="" class="text-body-secondary text-decoration-none">See All Projects <i class="ph ph-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Bootstrap JS 
@@ -189,8 +342,20 @@
     -->
     <script src="./assets/js/typer.js"></script>
 
+    <!-- phospor icons js
+      https://unpkg.com/@phosphor-icons/web@2.0.3
+    -->
+    <script src="./assets/js/phospor-icons.js"></script>
+
     <!-- my js -->
     <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/custom.js"></script>
+    <script>
+      (function () {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+        });
+      })();
+    </script>
   </body>
 </html>
