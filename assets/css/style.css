@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #5BA0D7;
-  --color-second: #0E1860;
+  --color-primary: #5ba0d7;
+  --color-second: #131FCA;
 }
 
 body {
@@ -87,7 +87,7 @@ body {
 
 #home {
   height: 100vh;
-  background: linear-gradient(to right bottom, #fff, #5BA0D765) !important;
+  background: linear-gradient(to right bottom, #fff, #5ba0d765) !important;
 }
 
 .h-full {
@@ -180,16 +180,17 @@ body {
 }
 
 .btn-about:hover {
-  background-color: #263397 !important;
+  background-color: #303eff !important;
 }
 
 #about {
   background-color: var(--color-primary);
+  padding-bottom: 6rem !important;
 }
 
-#about.py-5 {
+/* #about.py-5 {
   padding: 6.5rem 0 !important;
-}
+} */
 
 #about .image-wrapper {
   height: 250px;
@@ -200,7 +201,7 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   overflow: hidden;
-  border: .36rem solid var(--color-second);
+  border: 0.36rem solid var(--color-second);
 }
 
 .img-about {
@@ -217,7 +218,7 @@ body {
   position: absolute;
   left: 50%;
   right: 50%;
-  box-shadow: 0 0 30px rgba(0, 0,0, .3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, 25%);
   -webkit-transform: translate(-50%, 25%);
   -moz-transform: translate(-50%, 25%);
@@ -250,7 +251,7 @@ body {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-
+  
   .hero-left,
   .hero-right {
     flex: 0 0 100%;
