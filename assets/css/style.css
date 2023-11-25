@@ -83,11 +83,16 @@ body {
 .navbar.active {
   padding: 1rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  background: rgba(10, 80, 164, 0.3) !important;
 }
 
 #home {
   height: 100vh;
   background: linear-gradient(to right bottom, #fff, #5ba0d765) !important;
+}
+
+#contact {
+  height: 100vh;
 }
 
 .h-full {
@@ -181,6 +186,7 @@ body {
 
 .btn-about:hover {
   background-color: #303eff !important;
+  color: white !important;
 }
 
 #about {
@@ -261,6 +267,14 @@ body {
   height: 100%;
 }
 
+#projects .card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+}
+
+#projects .card:hover img {
+  scale: 1.04;
+}
+
 .card .card-image {
   width: 100%;
   height: 250px !important;
@@ -277,6 +291,37 @@ a.text-body-secondary:hover {
   color: #444 !important;
 }
 
+.left-contact {
+  flex: 0 0 40%;
+}
+
+.right-contact {
+  flex: 0 0 60%;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control {
+  outline: none !important;
+  border: 1px solid var(--color-second);
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: var(--color-primary) !important;
+}
+
+.footer-icon:hover {
+  scale: 1.1;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
 @media screen and (max-width: 1200px) {
   #home {
     height: auto;
@@ -289,6 +334,8 @@ a.text-body-secondary:hover {
     padding-right: 1.5rem !important;
   }
   
+  .left-contact,
+  .right-contact,
   .hero-left,
   .hero-right {
     flex: 0 0 100%;

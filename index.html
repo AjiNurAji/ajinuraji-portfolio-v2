@@ -31,7 +31,7 @@
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
       <div class="container">
         <div class="logo">
           <a class="navbar-brand fw-bold text-uppercase" href="#"
@@ -181,6 +181,7 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="bg-light py-5 text-center px-md-0 px-4">
         <div class="container">
           <h1
@@ -190,9 +191,8 @@
           </h1>
           <p class="text-body-secondary w-md-50 px-md-0 px-4 mx-auto">
             You can see all the projects i have worked on here. I'm interested
-            in freelance.
-            However, if you have other request or question, don't hesitate to
-            contact me.
+            in freelance. However, if you have other request or question, don't
+            hesitate to contact me.
           </p>
 
           <div class="row row-cols-1 mt-5 row-cols-md-2 g-4">
@@ -326,11 +326,70 @@
             </div>
           </div>
           <div class="show-more py-4">
-            <a href="" class="text-body-secondary text-decoration-none">See All Projects <i class="ph ph-arrow-up-right"></i></a>
+            <a href="/projects" class="text-body-secondary text-decoration-none"
+              >See All Projects <i class="ph ph-arrow-up-right"></i
+            ></a>
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="bg-light py-5 px-md-0 px-4 d-flex align-items-center position-relative">
+        <div
+          class="container d-flex flex-xl-row flex-column gap-5 z-3"
+        >
+          <div class="left-contact">
+            <h2 class="fw-bold text-uppercase">contact me</h2>
+            <p class="text-body-secondary mb-3">
+              I'm interested in freelance. However, if you have other request or
+              question, don't hesitate to use the form.
+            </p>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center">
+                <div class="d-flex flex-column align-items-start">
+                  <div class="d-flex justify-content-start align-items-center gap-2">
+                    <i class="ph-fill ph-map-pin" style="font-size: 20px;"></i>
+                    <span class="fw-bold text-capitalize">address</span>
+                  </div>
+                  <span class="ms-4 ps-1 text-body-secondary">Cihideunghilir, Cidahu, Kuningan, West Java.</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-start align-items-center gap-2">
+                <i class="ph-fill ph-phone-disconnect" style="font-size: 20px;"></i>
+                <span class="fw-bold">+62 896 6422 1610</span>
+              </div>
+              <div class="d-flex justify-content-start align-items-center gap-2">
+                <i class="ph-fill ph-envelope" style="font-size: 20px;"></i>
+                <span class="fw-bold">ajinuraji090306@gmail.com</span>
+              </div>             
+            </div>
+          </div>
+          <form class="right-contact d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <input type="text" name="name" id="name" placeholder="Your name..." class="form-control">
+              <input type="email" name="email" id="email" placeholder="Email..." class="form-control">
+            </div>
+            <input type="text" name="subject" id="subject" placeholder="Subject..." class="form-control">
+            <textarea name="message" id="message" rows="5" placeholder="Message..." class="form-control"></textarea>
+            <div class="d-flex justify-content-end align-items-center">
+              <button class="btn btn-about">Send</button>
+            </div>
+          </form>
+        </div>
+        <img src="./assets/images/wave-bottom.svg" class="position-absolute bottom-0 z-1" />
+      </section>
     </main>
+
+    <!-- footer section -->
+    <footer class="bg-primary d-flex flex-column justify-content-center align-items-center gap-2 py-3">
+      <p class="text-white">Connect with me:</p>
+      <div class="d-flex align-items-center gap-4">
+        <a href="https://instagram.com/ajnrji_" class="text-decoration-none footer-icon"><i class="ph-fill ph-instagram-logo" style="font-size: 25px; color: white;"></i></a>
+        <a href="https://github.com/ajinuraji" class="text-decoration-none footer-icon"><i class="ph-fill ph-github-logo" style="font-size: 25px; color: white;"></i></a>
+        <a href="https://linkedin.com/in/ajinuraji" class="text-decoration-none footer-icon"><i class="ph-fill ph-linkedin-logo" style="font-size: 25px; color: white;"></i></a>
+      </div>
+      <p class="text-white">&copy; <span id="current-years"></span> Copyright - Aji Nur Aji</p>
+    </footer>
 
     <!-- Bootstrap JS 
       https://getbootstrap.com/docs/5.3/getting-started/introduction/
@@ -349,6 +408,11 @@
 
     <!-- my js -->
     <script src="./assets/js/navbar.js"></script>
+    <script>
+      const element = document.getElementById('current-years')
+      const date = new Date()
+      element.innerText = date.getFullYear()
+    </script>
     <script>
       (function () {
         const scroll = new LocomotiveScroll({
