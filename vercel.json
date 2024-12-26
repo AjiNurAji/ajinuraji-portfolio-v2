@@ -24,7 +24,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_NAME": "Laravel Vercel",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://ajinuraji.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
