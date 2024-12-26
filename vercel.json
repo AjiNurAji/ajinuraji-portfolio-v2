@@ -22,7 +22,6 @@
         }
     ],
     "env": {
-        "APP_ENV": "production",
         "APP_NAME": "Aji Nur Aji",
         "APP_DEBUG": "true",
         "APP_CONFIG_CACHE": "/tmp/config.php",
