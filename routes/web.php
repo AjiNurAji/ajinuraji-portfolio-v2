@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware("maintenance");
 
-Route::post("/configurate-database", function () {
+Route::get("/configurate-database", function () {
     Artisan::call("migrate:fresh --seed");
     return response()->json([
         "success" => true,
