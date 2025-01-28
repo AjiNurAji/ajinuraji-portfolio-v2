@@ -18,7 +18,7 @@ class MaintenanceMiddleware
     {
         $site = Site::first();
 
-        if ($site->is_maintenance) {
+        if ($site->is_maintenance && env("APP_ENV") === "production") {
             return response()->view("maintenance");
         }
         
